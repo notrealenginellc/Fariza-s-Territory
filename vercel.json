@@ -1,6 +1,9 @@
 {
   "version": 2,
   "functions": {
+    "server.js": {
+      "includeFiles": "{index.html,admin.html,robots.txt,sitemap.xml,assets/**,vendor/**,lib/**,api/**}"
+    },
     "api/index.js": {
       "includeFiles": "{index.html,admin.html,robots.txt,sitemap.xml,assets/**,vendor/**,lib/**,api/**}"
     }

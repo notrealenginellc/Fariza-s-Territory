@@ -32,3 +32,6 @@ generate_sql.*
 Farizas Territory/
 remote_repo/
 scratch/
+.vercel
+.env*
+!.env.example

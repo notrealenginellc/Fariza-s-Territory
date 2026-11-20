@@ -1870,6 +1870,14 @@ Sitemap: ${baseUrl}/sitemap.xml
   return app;
 }
 
+let defaultApp = null;
+function getDefaultApp() {
+  if (!defaultApp) {
+    defaultApp = createApp({ enableOutboxWorker: false });
+  }
+  return defaultApp;
+}
+
 if (require.main === module) {
   const app = createApp({ enableOutboxWorker: true });
   app.listen(PORT, '0.0.0.0', () => {
@@ -1877,8 +1885,12 @@ if (require.main === module) {
   });
 }
 
-module.exports = {
-  createApp,
-  loadCatalogInMemory,
-  getCanonicalBaseUrl
-};
+function serverHandler(req, res) {
+  return getDefaultApp()(req, res);
+}
+
+serverHandler.createApp = createApp;
+serverHandler.loadCatalogInMemory = loadCatalogInMemory;
+serverHandler.getCanonicalBaseUrl = getCanonicalBaseUrl;
+
+module.exports = serverHandler;
