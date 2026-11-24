@@ -8,12 +8,15 @@
   --caramel:#D1803A;--chestnut:#794722;--olive:#5E522B;
   --magenta:#8E3B66;--teal:#1F6E63;--fuchsia:#B0326E;--navy:#2C4470;--gold:#C6952B;--coral:#D06A4E;--blue:#2E5FA3;--aqua:#2FA3A0;
   --ok:#3E7C4F;--warn:#C99A2E;--danger:#B4452F;--info:#2E5FA3;
-  --line:rgba(121,71,34,.26);--kantha:rgba(121,71,34,.55);
+  --line:rgba(121,71,34,.26);--line2:rgba(121,71,34,.38);--kantha:rgba(121,71,34,.55);
   --ease:cubic-bezier(.22,1,.36,1);--top-h:104px;--rad:14px;
   --shadow:0 30px 70px -34px rgba(30,29,28,.4);
+  --sh-sm:0 12px 28px -12px rgba(30,29,28,.22);
   --font:'Actor','Segoe UI',system-ui,sans-serif;
+  --sans:'Actor','Segoe UI',system-ui,sans-serif;
   --bn:'Noto Sans Bengali','Actor',sans-serif;
 }
+.price,.dr-total b,#inq-summary b{font-variant-numeric:tabular-nums}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:calc(var(--top-h, 104px) + 18px)}
 html,body{overflow-x:clip}

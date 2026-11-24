@@ -111,6 +111,7 @@ const jsFiles = [
   'api/capi.js',
   'api/index.js',
   'lib/supabaseServer.js',
+  'lib/localBoutiqueStore.js',
   'assets/js/commerce.js',
   'assets/js/config.js',
   'assets/js/supabaseClient.js',
@@ -119,6 +120,7 @@ const jsFiles = [
   'assets/js/threeCollectionParallax.js',
   'assets/js/threeui.js',
   'assets/js/threeAdminCockpit.js',
+  'assets/js/adminCockpit.js',
   'assets/js/animePolish.js',
   'assets/js/app.js'
 ];
